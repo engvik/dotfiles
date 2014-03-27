@@ -115,12 +115,9 @@ alias rails='source ~/.rvm/bin/rvm'
 alias venv="source venv/bin/activate"
 
 # ssh for the lazy:
-USERNAME=robertko
-alias mac="ssh ${USERNAME}@macgyver.neuf.no"
+USERNAME=lars
 alias neuf="mosh ${USERNAME}@login.neuf.no"
-alias fluorine="mosh ${USERNAME}@37.139.20.4"
-alias urania="ssh robert@urania.mienko.no"
-alias uio="ssh ${USERNAME}@login.ifi.uio.no"
+alias donatello="mosh ${USERNAME}@donatello.no"
 
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert

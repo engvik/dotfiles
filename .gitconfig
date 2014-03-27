@@ -8,6 +8,7 @@
 [core]
 	excludesfile = ~/.gitignore
 	attributesfile = ~/.gitattributes
+        editor = vim
 [color "branch"]
 	current = yellow reverse
 	local = yellow
@@ -38,5 +39,5 @@
 [url "git://gist.github.com/"]
 	insteadOf = "gist:"
 [user]
-	name = Robert Kolner
-	email = robert.kolner@gmail.com
+	name = Lars Jansøn Engvik
+	email = lars@engvik.nu
