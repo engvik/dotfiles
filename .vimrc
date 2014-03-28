@@ -62,7 +62,7 @@ set nu " Enable line numbers.
 set ofu=syntaxcomplete#Complete " Set omni-completion method.
 set report=0 " Show all changes.
 set ruler " Show the cursor position
-set scrolloff=3 " Start scrolling three lines before horizontal border of window.
+set scrolloff=4 " Start scrolling three lines before horizontal border of window.
 set shiftwidth=4 " The # of spaces for indenting.
 set shortmess=atI " Don't show the intro message when starting vim.
 set showmode " Show the current mode.
