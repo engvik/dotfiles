@@ -2,6 +2,7 @@
 
 echo "Installing dotfiles. Your old files WILL be overridden. Sorry. You can find a backup of your old files in ~/.dotfiles-backup"
 FILES=".bash_prompt .bashrc .gitignore .vimrc .gitconfig"
+VIMSCRIPTS="ftdetect/ syntax/"
 
 mkdir -p ~/.dotfiles-backup
 
@@ -10,6 +11,12 @@ for FILE in ${FILES}
 do
 	mv ~/${FILE} ~/.dotfiles-backup/
 	cp ${FILE} ~/
+done
+
+# Copy VIM-scripts:
+for SCRIPT in ${VIMSCRIPTS}
+do
+	cp -r ${VIMSCRIPTS} ~/.vim/
 done
 
 echo "Setting up ~/.vim directories"
