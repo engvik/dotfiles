@@ -23,20 +23,20 @@ mkdir -p ~/.vim/bundle
 mkdir -p ~/.vim/swaps
 mkdir -p ~/.vim/undo
 
-# Installing pathogen.
+# Installing pathogen:
 echo "[DOTFILES] Installing pathogen."
 curl -Sso ~/.vim/autoload/pathogen.vim \
     https://raw.github.com/tpope/vim-pathogen/master/autoload/pathogen.vim
 
-# Fetching and installing VIM-scripts using pathogen.
+# Fetching and installing VIM-scripts using pathogen:
 echo "[DOTFILES] Fetching and installing VIM-scripts using pathogen."
 cd ~/.vim/bundle/ && git clone --recursive https://github.com/davidhalter/jedi-vim.git
 
-# Copy VIM-scripts.
+# Copy VIM-scripts:
 echo "[DOTFILES] Manually installing VIM-scripts."
 for SCRIPT in ${VIMSCRIPTS}
 do
 	cp -r ${VIMSCRIPTS} ~/.vim/
 done
 
-echo "Finished!"
+echo "[DOTFILES] Finished!"
