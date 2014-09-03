@@ -2,7 +2,7 @@
 
 echo "[DOTFILES] Installing dotfiles. Your old files WILL be overridden. Sorry. You can find a backup of your old files in ~/.dotfiles-backup"
 FILES=".bash_prompt .bashrc .gitignore .vimrc .gitconfig"
-VIMSCRIPTS="ftdetect/ syntax/"
+VIMSCRIPTS="vimscripts/ftdetect/ vimscripts/syntax/"
 
 mkdir -p ~/.dotfiles-backup
 
