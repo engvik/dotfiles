@@ -75,7 +75,7 @@ set softtabstop=4 " A tab is always 4 spaces.
 set splitbelow " New window goes below
 set splitright " New windows goes right
 set suffixes=.bak,~,.swp,.swo,.o,.d,.info,.aux,.log,.dvi,.pdf,.bin,.bbl,.blg,.brf,.cb,.dmg,.exe,.ind,.idx,.ilg,.inx,.out,.toc,.pyc,.pyd,.dll
-set tabstop=4 " Tabs are 4 spaces
+"set tabstop=4 " Tabs are 4 spaces
 set title " Show the filename in the window titlebar.
 set ttyfast " Send more characters at a given time.
 set ttymouse=xterm " Set mouse type to xterm.
@@ -223,27 +223,27 @@ autocmd BufReadPost *
 
 " Filetype-dependent options
 autocmd Filetype python setlocal expandtab
-autocmd Filetype python setlocal tabstop=4
+autocmd Filetype python setlocal softtabstop=4
 autocmd Filetype python setlocal shiftwidth=4
 autocmd Filetype rst setlocal expandtab
-autocmd Filetype rst setlocal tabstop=3
+autocmd Filetype rst setlocal softtabstop=3
 autocmd Filetype rst setlocal shiftwidth=3
 autocmd Filetype haskell setlocal expandtab
 autocmd Filetype php setlocal expandtab
 autocmd Filetype php setlocal shiftwidth=4
-autocmd Filetype php setlocal tabstop=4
+autocmd Filetype php setlocal softtabstop=4
 autocmd Filetype html setlocal expandtab
 autocmd Filetype html setlocal shiftwidth=4
-autocmd Filetype html setlocal tabstop=4
+autocmd Filetype html setlocal softtabstop=4
 autocmd Filetype css setlocal expandtab
 autocmd Filetype css setlocal shiftwidth=4
-autocmd Filetype css setlocal tabstop=4
+autocmd Filetype css setlocal softtabstop=4
 autocmd Filetype scss setlocal expandtab
 autocmd Filetype scss setlocal shiftwidth=4
-autocmd Filetype scss setlocal tabstop=4
+autocmd Filetype scss setlocal softtabstop=4
 autocmd Filetype js setlocal expandtab
 autocmd Filetype js setlocal shiftwidth=4
-autocmd Filetype js setlocal tabstop=4
+autocmd Filetype js setlocal softtabstop=4
 
 " Set relative line numbers
 set relativenumber " Use relative line numbers. Current line is still in status bar.
