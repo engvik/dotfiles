@@ -31,6 +31,7 @@ curl -Sso ~/.vim/autoload/pathogen.vim \
 # Fetching and installing VIM-scripts using pathogen:
 echo "[DOTFILES] Fetching and installing VIM-scripts using pathogen."
 cd ~/.vim/bundle/ && git clone --recursive https://github.com/davidhalter/jedi-vim.git
+git clone https://github.com/moll/vim-node.git ~/.vim/bundle/node
 
 # Copy VIM-scripts:
 echo "[DOTFILES] Manually installing VIM-scripts."
