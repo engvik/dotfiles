@@ -285,3 +285,7 @@ let g:vimclojure#FuzzyIndent = 1 " Names beginning in 'def' or 'with' to be inde
 
 " Rainbow Parenthesis
 nnoremap <leader>rp :RainbowParenthesesToggle<CR>
+
+""" boilerplates
+" React
+abbr rcc var = React.createClass({<Return>render: function() {<Return>return (<Return>)<Return>}<Return>});
