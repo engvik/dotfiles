@@ -2,6 +2,7 @@
 
 echo "[DOTFILES] Installing dotfiles. Your old files WILL be overridden. Sorry. You can find a backup of your old files in ~/.dotfiles-backup"
 FILES=".bash_prompt .bashrc .gitignore .vimrc .gitconfig"
+SUBLIME="Preferences.sublime-settings"
 VIMSCRIPTS="vimscripts/ftdetect/ vimscripts/syntax/"
 
 mkdir -p ~/.dotfiles-backup
@@ -14,7 +15,7 @@ do
 	cp ${FILE} ~/
 done
 
-# Set up vim directories and install Pathogen:
+# Set up vim directories:
 echo "[DOTFILES] Setting up ~/.vim directories."
 mkdir -p ~/.vim
 mkdir -p ~/.vim/autoload
@@ -39,5 +40,16 @@ for SCRIPT in ${VIMSCRIPTS}
 do
 	cp -r ${VIMSCRIPTS} ~/.vim/
 done
+
+# Copy Sublime config.
+echo "[DOTFILES] Copying Sublime config."
+cp ${SUBLIME} ~/.config/sublime-text-3/Packages/User
+
+# Install Sublime packages.
+echo "[DOTFILES] Installing Sublime packages."
+curl -Sso ~/.config/sublime-text-3/Installed\ Packages/ \
+    https://sublime.wbond.net/Package%20Control.sublime-package
+# git clone https://github.com/jisaacks/GitGutter.git ~/.config/sublime-text-3/Packages/
+
 
 echo "[DOTFILES] Finished!"
