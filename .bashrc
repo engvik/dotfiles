@@ -158,3 +158,7 @@ done
 unset file
 
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+export PATH="./node_modules/.bin:$PATH" # node module to path
+
+export NVM_DIR="/home/lars/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
