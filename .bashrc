@@ -114,6 +114,9 @@ alias wow='git status'
 alias rails='source ~/.rvm/bin/rvm'
 alias venv="source venv/bin/activate"
 
+# fun 
+alias pent="curl wttr.in/oslo"
+
 # ssh for the lazy:
 USERNAME=lars
 alias neuf="mosh ${USERNAME}@login.neuf.no"
